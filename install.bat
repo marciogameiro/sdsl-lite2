@@ -31,4 +31,10 @@ if errorlevel 1 (
     exit /b %errorlevel%
 )
 
+echo Goind to install shit in %SDSL_INSTALL_PREFIX%
+
+echo Command to use "%VS140COMNTOOLS%
+
+echo Command to use 2: "%VS140COMNTOOLS%..\IDE\devenv.com"
+
 "%VS140COMNTOOLS%..\IDE\devenv.com" /build release /project sdsl sdsl.sln
