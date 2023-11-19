@@ -37,4 +37,4 @@ echo Command to use "%VS140COMNTOOLS%
 
 echo Command to use 2: "%VS140COMNTOOLS%..\IDE\devenv.com"
 
-"%VS140COMNTOOLS%..\IDE\devenv.com" /build release /project sdsl sdsl.sln
+"%VS170COMNTOOLS%..\IDE\devenv.com" /build release /project sdsl sdsl.sln
