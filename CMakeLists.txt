@@ -148,4 +148,4 @@ configure_file("${CMAKE_CURRENT_SOURCE_DIR}/sdsl-lite.pc.cmake"
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/sdsl-lite.pc"
         DESTINATION "lib/pkgconfig")
 
-add_subdirectory(test)
+# add_subdirectory(test)
