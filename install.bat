@@ -43,6 +43,10 @@ echo devenv.com /build release /project sdsl sdsl.sln
 
 echo "C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.com" /build release /project sdsl sdsl.sln
 
-devenv /build release /project sdsl sdsl.sln
+echo devenv /build release /project sdsl sdsl.sln
 
-msbuild /build release /project sdsl sdsl.sln
+echo msbuild -t:build -p:configuration=release sdsl sdsl.sln
+
+echo msbuild.exe file.vcxproj /t:rebuild /p:configuration=debug;platform=unittest
+
+msbuild -t:sdsl:build -p:configuration=release sdsl.sln
