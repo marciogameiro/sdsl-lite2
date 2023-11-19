@@ -41,4 +41,8 @@ echo "%VS170COMNTOOLS%..\IDE\devenv.com" /build release /project sdsl sdsl.sln
 
 echo devenv.com /build release /project sdsl sdsl.sln
 
-"C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.com" /build release /project sdsl sdsl.sln
+echo "C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.com" /build release /project sdsl sdsl.sln
+
+devenv /build release /project sdsl sdsl.sln
+
+msbuild /build release /project sdsl sdsl.sln
