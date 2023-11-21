@@ -25,9 +25,9 @@ if errorlevel 1 (
 
 rem TODO clean-up build directory
 
-echo cmake -DCMAKE_INSTALL_PREFIX="${SDSL_INSTALL_PREFIX}" -G"Visual Studio 17 2022" ..
+echo cmake -DCMAKE_INSTALL_PREFIX="${SDSL_INSTALL_PREFIX}" -G"Visual Studio 16 2019" ..
 
-cmake -DCMAKE_INSTALL_PREFIX="${SDSL_INSTALL_PREFIX}" -G"Visual Studio 16 2019" ..
+cmake -DCMAKE_INSTALL_PREFIX="${SDSL_INSTALL_PREFIX}" -G"Visual Studio 17 2022" ..
 if errorlevel 1 (
     echo ERROR: CMake build failed
     exit /b %errorlevel%
