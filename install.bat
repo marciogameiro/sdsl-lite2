@@ -59,4 +59,6 @@ echo msbuild -t:sdsl -p:configuration=release sdsl.sln
 
 echo msbuild -t:sdsl -p:configuration=Release -p:Platform=x86 -p:PlatformTaget=x86 sdsl.sln
 
-msbuild -t:sdsl -p:configuration=Release -p:Platform=x86 sdsl.sln
+echo msbuild -t:sdsl -p:configuration=Release -p:Platform=x86 sdsl.sln
+
+msbuild -t:sdsl -p:configuration=Release -p:Platform="Any CPU" sdsl.sln
