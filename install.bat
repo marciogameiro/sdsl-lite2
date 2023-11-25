@@ -53,4 +53,8 @@ echo msbuild.exe file.vcxproj /t:rebuild /p:configuration=debug;platform=unittes
 
 echo msbuild -t:sdsl:build -p:configuration=release sdsl.sln
 
-msbuild -t:sdsl -p:configuration=release sdsl.sln
+
+
+echo msbuild -t:sdsl -p:configuration=release sdsl.sln
+
+msbuild -t:sdsl -p:configuration=release -p:Platform=x86 -p:PlatformTaget=x86 sdsl.sln
