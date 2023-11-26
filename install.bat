@@ -57,10 +57,12 @@ echo msbuild -t:sdsl:build -p:configuration=release sdsl.sln
 
 echo msbuild -t:sdsl -p:configuration=release sdsl.sln
 
+msbuild -t:sdsl -p:configuration=Release sdsl.sln
+
 echo msbuild -t:sdsl -p:configuration=Release -p:Platform=x86 -p:PlatformTaget=x86 sdsl.sln
 
 echo msbuild -t:sdsl -p:configuration=Release -p:Platform=x86 sdsl.sln
 
 echo msbuild -t:sdsl -p:configuration=Release -p:Platform=x64 sdsl.sln
 
-msbuild -t:sdsl -p:configuration=Release -p:Platform=amd64_x86 sdsl.sln
+echo msbuild -t:sdsl -p:configuration=Release -p:Platform=amd64_x86 sdsl.sln
